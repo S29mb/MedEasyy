@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "MedicineSheba-master",
-    "slug": "MedicineSheba-master",
+    "name": "Tektal_Pharma",
+    "slug": "Tektal_Pharma",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -33,10 +33,23 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-web-browser"
     ],
+    "permissions": [
+  "ACCESS_FINE_LOCATION"
+],
     "experiments": {
       "typedRoutes": true
+    }
+  },
+
+  "android": {
+    "permissions": ["CAMERA"]
+  },
+  "ios": {
+    "infoPlist": {
+      "NSCameraUsageDescription": "Cette application utilise la caméra pour scanner des ordonnances."
     }
   }
 }
